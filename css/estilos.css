@@ -15,6 +15,12 @@ h1
 	font-family: verdana;
 }
 
+header
+{
+	text-align: center;
+	width: 100%;
+}
+
 .twitter,.facebook
 {
 	background: #036;
@@ -31,4 +37,16 @@ h1
 .twitter:hover,.facebook:hover
 {
 	background: #f36;
+}
+
+.flecha
+{
+	color: #fff;
+	font-family: verdana;
+	font-size: 5em;
+	font-weight: bold;
+	position: relative;
+	z-index: 3;
+	top: 25%;
+	left: 0%;
 }
