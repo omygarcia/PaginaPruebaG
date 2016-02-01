@@ -14,3 +14,21 @@ h1
 	color: #fff;
 	font-family: verdana;
 }
+
+.twitter,.facebook
+{
+	background: #036;
+	border-radius: 0.75em;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0.5em;
+	vertical-align: top;
+	width: 40%;
+}
+
+.twitter:hover,.facebook:hover
+{
+	background: #f36;
+}
