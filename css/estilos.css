@@ -4,6 +4,11 @@
 	padding: 0;
 }
 
+html
+{
+	font-size: 16px;
+}
+
 body
 {
 	background: #044;
@@ -11,14 +16,24 @@ body
 
 h1
 {
+	position: relative;
 	color: #fff;
 	font-family: verdana;
+	left: 0%;
+	bottom: 700px;
 }
 
 header
 {
+	display: block;
 	text-align: center;
 	width: 100%;
+	max-height: 900px;
+}
+
+#contenido,footer
+{
+	text-align: center;
 }
 
 .twitter,.facebook
@@ -41,12 +56,67 @@ header
 
 .flecha
 {
+	bottom: 250px;
 	color: #fff;
 	font-family: verdana;
-	font-size: 5em;
+	font-size: 5rem;
 	font-weight: bold;
 	position: relative;
 	z-index: 3;
-	top: 25%;
 	left: 0%;
+	-webkit-animation: mymove 3s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 3s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {bottom: 150px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {bottom: 150px;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymoveM {
+    50% {bottom: 60px;}
+}
+
+/* Standard syntax */
+@keyframes mymoveM {
+    50% {bottom: 60px;}
+}
+
+.principal
+{
+	width: 100%;
+}
+
+
+@media screen and (max-width: 750px){
+	
+	h1
+	{
+		font-size: 1.2rem;
+		bottom: 300px;
+	}
+
+}
+
+@media screen and (max-width: 450px){
+	
+	h1
+	{
+		font-size: 1.2rem;
+		bottom: 150px;
+	}
+
+	.flecha
+	{
+		bottom: 100px;
+		font-size: 3rem;
+		-webkit-animation: mymoveM 4s infinite; /* Chrome, Safari, Opera */
+    	animation: mymoveM 4s infinite;
+	}
 }
